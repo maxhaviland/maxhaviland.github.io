@@ -10,7 +10,7 @@ const projects = [
     title: "Your Favorite Anime",
     stacks: ["ReactJS", "Redux", "Material UI"],
     description: "bla bla bla",
-    image: "/images/projects/your-favorite-animes.png",
+    image: process.env.NEXT_PUBLIC_BASE_PATH+"/images/projects/your-favorite-animes.png",
     link: "https://your-favorite-anime.netlify.app",
     repository: "https://github.com/maxhaviland/your-favorite-anime"
   },

@@ -5,7 +5,7 @@ import { IoMdMail } from 'react-icons/io'
 
 const Contact = () => {
   return (
-    <Content title="Contato" image="/images/mailbox.svg">
+    <Content title="Contato" image={process.env.NEXT_PUBLIC_BASE_PATH+"/images/mailbox.svg"}>
     <List fontSize={["15px", "18px"]} spacing={3}>
       <ListItem>
         <ListIcon as={IoMdMail} color="primary" />

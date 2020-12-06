@@ -29,7 +29,7 @@ const SocialButton = ({href, title, ...props}) => {
 const Home = () => {
   return (
     <>
-      <Content title="Max Haviland" image="/images/home.svg">
+      <Content title="Max Haviland" image={process.env.NEXT_PUBLIC_BASE_PATH+"/images/home.svg"}>
         <Text textAlign="justify">
           Atualmente sou um full stack developer, com mais experiência 
           como front end. Sou um amante da programação, em especial 
