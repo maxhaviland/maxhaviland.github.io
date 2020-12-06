@@ -9,20 +9,20 @@ interface Props {
 const Content: FC<Props> = ({ title, image, children }) => {
   return (
     <>
-          <Text 
-            fontSize={["4xl", "4xl", "5xl", "6xl"]} 
-            marginBottom="3" 
-            textAlign="center"
-          >
-            {title}
-          </Text>
+      <Text 
+        fontSize={["4xl", "4xl", "5xl", "6xl"]} 
+        marginBottom="3" 
+        textAlign="center"
+      >
+        {title}
+      </Text>
       <Container display="flex" justifyContent="center">
         <Box m="0" zIndex="2" fontSize={["sm", "sm", "md"]} position="relative">
           {children}
         </Box>
         <Box
           zIndex="1"
-          backgroundImage={`url(${image})`}
+          backgroundImage={`url(${process.env.NEXT_PUBLIC_BASE_PATH+image})`}
           backgroundSize="100% 100%"
           backgroundRepeat="no-repeat"
           opacity={['0', '0', "70%", '100%']}

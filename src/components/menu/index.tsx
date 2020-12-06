@@ -41,7 +41,7 @@ const Menu = () => {
       >
         <Image 
           display={['none', 'none', 'block']}
-          src="/images/profile.svg" 
+          src={process.env.NEXT_PUBLIC_BASE_PATH+"/images/profile.svg"} 
           alt="Max Haviland"
           width={{
             lg: 268,
