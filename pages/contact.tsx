@@ -1,8 +1,7 @@
 import Content from '../src/components/content';
-import Link from 'next/link'
 import { List, ListItem, ListIcon } from '@chakra-ui/react';
 import { FaPhone, FaDiscord } from 'react-icons/fa';
-import { IoMdMail, IoIosPhoneLandscape } from 'react-icons/io'
+import { IoMdMail } from 'react-icons/io'
 
 const Contact = () => {
   return (
