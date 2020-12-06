@@ -43,17 +43,16 @@ const CustomDrawer: FC<CustomDrawerProps> = ({ display, placement = "left" }) =>
       <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay>
           <DrawerContent>
-            <IconButton 
-                onClick={onClose}
-                right="4" 
-                top="2" 
-                position="absolute" 
-                w="10" 
-                h="10" 
-                rounded={'100%'} 
-                icon={<GoEyeClosed />}
-                _hover= {{ color: 'button'}}
-              />
+            <Box 
+              right="4" 
+              top="2"
+              position="absolute" 
+              w="10" 
+              h="10" 
+              rounded={'100%'} 
+              icon={<GoEyeClosed />}
+              _hover= {{ color: 'button'}}
+            />
             <DrawerHeader>Menu</DrawerHeader>
             <DrawerBody>
               <Stack display="flex" justify="center" m="0 auto" >
