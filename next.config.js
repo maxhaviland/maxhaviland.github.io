@@ -1,4 +1,4 @@
 module.exports = {
-  basePath: '/',
-  assetPrefix: '/'
+  basePath: 'maxhaviland.github.io',
+  assetPrefix: 'maxhaviland.github.io/'
 }
