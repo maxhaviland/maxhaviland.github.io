@@ -1,10 +1,8 @@
 import { FC } from 'react';
-import { Flex, Link, Box, Image, SystemProps } from '@chakra-ui/react';
+import { Flex, Link, Box, Img, SystemProps } from '@chakra-ui/react';
 import Drawer from './drawer';
 import { useRouter } from 'next/router';
 import routes from '../../routes';
-import { FaPhone, FaDiscord } from 'react-icons/fa';
-import { IoMdMail, IoIosPhoneLandscape } from 'react-icons/io'
 export interface NavListProps {
   direction?: SystemProps['flexDirection']
 }
@@ -39,7 +37,7 @@ const Menu = () => {
         top="0"
         zIndex="4"
       >
-        <Image 
+        <Img 
           display={['none', 'none', 'block']}
           src={process.env.NEXT_PUBLIC_BASE_PATH+"/images/profile.svg"} 
           alt="Max Haviland"
