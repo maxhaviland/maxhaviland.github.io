@@ -1,10 +1,17 @@
 import { FC } from 'react';
+<<<<<<< HEAD
 import { Flex, Link, Box, Image, SystemProps } from '@chakra-ui/react';
 import Drawer from './drawer';
 import { useRouter } from 'next/router';
 import routes from '../../routes';
 import { FaPhone, FaDiscord } from 'react-icons/fa';
 import { IoMdMail, IoIosPhoneLandscape } from 'react-icons/io'
+=======
+import { Flex, Link, Box, Img, SystemProps } from '@chakra-ui/react';
+import Drawer from './drawer';
+import { useRouter } from 'next/router';
+import routes from '../../routes';
+>>>>>>> 84fb4c4764e042a1aca851362dd50ce338ba70fc
 export interface NavListProps {
   direction?: SystemProps['flexDirection']
 }
@@ -51,7 +58,11 @@ const Menu = () => {
             base: 212
           }}
           marginTop={{
+<<<<<<< HEAD
             lg: "-4",
+=======
+            lg: "-1",
+>>>>>>> 84fb4c4764e042a1aca851362dd50ce338ba70fc
             md: "-10"
           }}
           marginLeft="-4"
