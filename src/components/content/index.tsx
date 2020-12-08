@@ -22,11 +22,7 @@ const Content: FC<Props> = ({ title, image, children }) => {
         </Box>
         <Box
           zIndex="1"
-<<<<<<< HEAD
-          backgroundImage={`url(${image})`}
-=======
           backgroundImage={`url(${process.env.NEXT_PUBLIC_BASE_PATH+image})`}
->>>>>>> 84fb4c4764e042a1aca851362dd50ce338ba70fc
           backgroundSize="100% 100%"
           backgroundRepeat="no-repeat"
           opacity={['0', '0', "70%", '100%']}
