@@ -35,7 +35,15 @@ const projects = [
 const ProjectCard = ({ project }) => {
   return (
   <Box w={[300]} shadow="lg">
-    <Image maxH="40" w="full" objectFit="scale-down" src={project.image} alt={project.title} />
+    <Box 
+      maxH="40" 
+      h="400px"
+      w="full" 
+      backgroundImage={`url("${project.image}")`} 
+      backgroundSize="contain"
+      backgroundRepeat="no-repeat"
+      backgroundPosition="center"
+      alt={project.title} />
     <Box p="6" bg="white">
       <Stack direction="row" justifyContent="center">
         {project.stacks.map(stack => (

@@ -39,19 +39,19 @@ const Menu = () => {
         top="0"
         zIndex="4"
       >
-        <Image 
+        <Box 
           display={['none', 'none', 'block']}
-          src="/images/profile.svg" 
-          alt="Max Haviland"
+          backgroundImage="url('/images/profile.svg')"
+          backgroundSize="100% 100%"
           width={{
-            lg: 268,
-            md: 200
+            lg: 350,
+            md: 300
           }}
           height={{
             base: 212
           }}
           marginTop={{
-            lg: "-1",
+            lg: "-4",
             md: "-10"
           }}
           marginLeft="-4"
