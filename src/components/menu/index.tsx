@@ -58,11 +58,7 @@ const Menu = () => {
             base: 212
           }}
           marginTop={{
-<<<<<<< HEAD
             lg: "-4",
-=======
-            lg: "-1",
->>>>>>> 84fb4c4764e042a1aca851362dd50ce338ba70fc
             md: "-10"
           }}
           marginLeft="-4"
