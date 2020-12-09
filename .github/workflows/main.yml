@@ -28,10 +28,14 @@ jobs:
     - run: npm ci
     - run: npm run build
       env:
-        NEXT_PUBLIC_BASE_PATH: "maxhaviland.github.io"
+        NEXT_PUBLIC_BASE_PATH: https://github.com/maxhaviland/maxhaviland.github.io
     - run: npm run export
       env:
-        NEXT_PUBLIC_BASE_PATH: "maxhaviland.github.io"
+        NEXT_PUBLIC_BASE_PATH: https://github.com/maxhaviland/maxhaviland.github.io
+    - run: touch out/.nojekyll 
+    - run: touch out/CNAME
+    - run: \"example.com\" >> out/CNAME
+    - run: gh-pages -d out
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@3.6.2
       with:
