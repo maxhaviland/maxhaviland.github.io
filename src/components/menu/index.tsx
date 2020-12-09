@@ -29,11 +29,11 @@ const Menu = () => {
 					backgroundImage="url('/images/profile.svg')"
 					backgroundSize="100% 100%"
 					width={{
-						lg: 380,
+						lg: 360,
 						md: 300,
 					}}
 					height={{
-						base: 300,
+						base: 280,
 					}}
 					marginTop={{
 						lg: '-7',

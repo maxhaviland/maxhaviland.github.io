@@ -9,7 +9,7 @@ interface Props {
 const Content: FC<Props> = ({ title, image, children }) => {
 	return (
 		<>
-			<Text fontSize={['4xl', '4xl', '5xl', '6xl']} marginBottom="3" textAlign="center">
+			<Text zIndex="3" position="relative" fontSize={['4xl', '4xl', '5xl', '6xl']} marginBottom="3" textAlign="center">
 				{title}
 			</Text>
 			<Container display="flex" justifyContent="center">
@@ -18,7 +18,7 @@ const Content: FC<Props> = ({ title, image, children }) => {
 				</Box>
 				<Box
 					zIndex="1"
-					backgroundImage={`url(${process.env.NEXT_PUBLIC_BASE_PATH + image})`}
+					backgroundImage={`url(${image})`}
 					backgroundSize="100% 100%"
 					backgroundRepeat="no-repeat"
 					opacity={['0', '0', '70%', '100%']}
