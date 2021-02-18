@@ -3,7 +3,16 @@ import { Box, Badge, Image, Stack, Grid, Button, Text } from '@chakra-ui/react';
 import { BiCodeAlt } from 'react-icons/bi';
 import { BsFillEyeFill } from 'react-icons/bs';
 
-const projects = [
+type Project = {
+	title: string;
+	stacks: string[],
+	description: string;
+	image: string;
+	link: string;
+	repository: string;
+}
+
+const projects: Project[] = [
 	{
 		title: 'Your Favorite Anime',
 		stacks: ['ReactJS', 'Redux', 'Material UI'],
@@ -32,6 +41,12 @@ const projects = [
 ];
 
 const ProjectCard = ({ project }) => {
+	const stackList = (stack: string, index: number) => (
+		<Badge key={stack+index} borderRadius="full" py="1" px="2" colorScheme="purple">
+			{stack}
+		</Badge>
+	);
+
 	return (
 		<Box w={[300]} shadow="lg">
 			<Box
@@ -46,11 +61,7 @@ const ProjectCard = ({ project }) => {
 			/>
 			<Box p="6" bg="white">
 				<Stack direction="row" justifyContent="center">
-					{project.stacks.map((stack) => (
-						<Badge key={Math.random() + stack + Math.random()} borderRadius="full" py="1" px="2" colorScheme="purple">
-							{stack}
-						</Badge>
-					))}
+					{project.stacks.map(stackList)}
 				</Stack>
 
 				<Text my="2" fontSize="xl" color="primary">
@@ -89,6 +100,7 @@ const ProjectCard = ({ project }) => {
 };
 
 const Projects = () => {
+	const projectList = (project: Project, index: number) => <ProjectCard project={project} />
 	return (
 		<Content title="Projetos">
 			<Grid
@@ -96,9 +108,7 @@ const Projects = () => {
 				mb="4"
 				templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)']}
 				gap={10}>
-				{projects.map((project) => (
-					<ProjectCard project={project} />
-				))}
+				{projects.map(projectList)}
 			</Grid>
 		</Content>
 	);
