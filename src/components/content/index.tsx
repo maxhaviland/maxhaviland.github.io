@@ -9,7 +9,7 @@ interface Props {
 const Content: FC<Props> = ({ title, image, children }) => {
 	return (
 		<>
-			<Text zIndex="3" position="relative" fontSize={['4xl', '4xl', '5xl', '6xl']} marginBottom="3" textAlign="center">
+			<Text zIndex="3" position="relative" fontSize={['4xl', '4xl', '5xl', '6xl']} mb="2rem" textAlign="center">
 				{title}
 			</Text>
 			<Container display="flex" justifyContent="center">

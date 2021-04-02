@@ -1,4 +1,4 @@
-const routes = [
+const routes: Route[] = [
 	{
 		path: '/',
 		name: 'Início',

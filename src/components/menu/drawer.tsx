@@ -26,6 +26,17 @@ const CustomDrawer: FC<CustomDrawerProps> = ({ display, placement = 'left' }) =>
 	const { asPath } = useRouter();
 	const { isOpen, onOpen, onClose } = useDisclosure();
 
+	const routeList = (route: Route) => (
+		<Box key={route.name} m="0" h="10">
+			<Link
+				textColor={asPath === route.path ? 'secondary' : 'primary'}
+				_hover={{ textColor: 'secondary' }}
+				href={route.path}>
+				{route.name}
+			</Link>
+		</Box>
+	)
+
 	return (
 		<>
 			<Box
@@ -54,16 +65,7 @@ const CustomDrawer: FC<CustomDrawerProps> = ({ display, placement = 'left' }) =>
 						<DrawerHeader>Menu</DrawerHeader>
 						<DrawerBody>
 							<Stack display="flex" justify="center" m="0 auto">
-								{routes.map((route) => (
-									<Box m="0" h="10">
-										<Link
-											textColor={asPath === route.path ? 'secondary' : 'primary'}
-											_hover={{ textColor: 'secondary' }}
-											href={route.path}>
-											{route.name}
-										</Link>
-									</Box>
-								))}
+								{routes.map(routeList)}
 							</Stack>
 						</DrawerBody>
 					</DrawerContent>
