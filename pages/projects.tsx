@@ -3,9 +3,8 @@ import { Grid, Box } from '@chakra-ui/react';
 import ProjectCard from '../src/components/projectCard';
 import { projects } from '../src/data';
 
-
 const Projects = () => {
-	const projectList = (project: Project) => <ProjectCard key={project.title} project={project} />
+	const projectList = (project: Project) => <ProjectCard key={project.title} project={project} />;
 	return (
 		<Content title="Projetos">
 			<Grid

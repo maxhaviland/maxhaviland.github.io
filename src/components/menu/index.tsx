@@ -14,18 +14,14 @@ const NavList: FC<NavListProps> = ({ direction }) => {
 		<Link key={route.name} color={asPath === route.path ? 'secondary' : 'white'} px={10} my="0" href={route.path}>
 			{route.name}
 		</Link>
-	)
-	return (
-		<Flex direction={direction}>
-			{routes.map(routeList)}
-		</Flex>
 	);
+	return <Flex direction={direction}>{routes.map(routeList)}</Flex>;
 };
 
 const Menu = () => {
 	return (
 		<>
-			<Flex 
+			<Flex
 				height={['56px', '56px', '64px']}
 				animation="ease-in"
 				as="nav"

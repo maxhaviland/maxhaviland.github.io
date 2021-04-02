@@ -35,7 +35,7 @@ const CustomDrawer: FC<CustomDrawerProps> = ({ display, placement = 'left' }) =>
 				{route.name}
 			</Link>
 		</Box>
-	)
+	);
 
 	return (
 		<>

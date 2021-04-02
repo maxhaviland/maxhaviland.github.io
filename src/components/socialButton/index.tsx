@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { Button } from '@chakra-ui/react';
 
 interface Props {
-  title: string;
-  href: UrlObject | string;
-  leftIcon: JSX.Element;
-};
+	title: string;
+	href: UrlObject | string;
+	leftIcon: JSX.Element;
+}
 
 const SocialButton: FC<Props> = ({ href, title, leftIcon }) => {
 	return (
@@ -23,8 +23,7 @@ const SocialButton: FC<Props> = ({ href, title, leftIcon }) => {
 					height={['60px', '40px']}
 					fontSize={['18px', '15px']}
 					width={['full', '125px']}
-					leftIcon={leftIcon}
-        >
+					leftIcon={leftIcon}>
 					{title}
 				</Button>
 			</a>

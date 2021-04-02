@@ -4,12 +4,12 @@ import { BiCodeAlt } from 'react-icons/bi';
 import { BsFillEyeFill } from 'react-icons/bs';
 
 interface Props {
-  project: Project
-};
+	project: Project;
+}
 
 const ProjectCard: FC<Props> = ({ project }) => {
 	const stackList = (stack: string, index: number) => (
-		<Badge key={stack+index} borderRadius="full" py="1" px="2" colorScheme="purple">
+		<Badge key={stack + index} borderRadius="full" py="1" px="2" colorScheme="purple">
 			{stack}
 		</Badge>
 	);
