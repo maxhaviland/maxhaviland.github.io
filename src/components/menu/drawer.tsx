@@ -45,9 +45,11 @@ const CustomDrawer: FC<CustomDrawerProps> = ({ display, placement = 'left' }) =>
 				}}
 				ml="10"
 				mt={[-2, -1]}
+				w={30}
 				cursor="pointer"
+				onClick={onOpen}
 				display={display}>
-				<AiOutlineMenu size="1.6em" onClick={onOpen} />
+				<AiOutlineMenu size="1.6em" />
 			</Box>
 			<Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
 				<DrawerOverlay>
