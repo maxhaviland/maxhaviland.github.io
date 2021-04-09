@@ -27,8 +27,8 @@ jobs:
       
     - run: npm ci
     - run: npm run build && npm run export
-      env:
-        NEXT_PUBLIC_BASE_PATH: "/out"
+      #env:
+        #NEXT_PUBLIC_BASE_PATH: "/out"
  
     - run: touch ./out/.nojekyll 
     - run: touch ./out/CNAME
