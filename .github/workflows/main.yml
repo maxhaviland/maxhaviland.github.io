@@ -26,12 +26,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
       
     - run: npm ci
-    - run: npm run build
-      #env:
-        #NEXT_PUBLIC_BASE_PATH: https://cdn.statically.io/gh/maxhaviland/maxhaviland.github.io/gh-pages/
-    - run: npm run export
-      #env:
-        #NEXT_PUBLIC_BASE_PATH: https://cdn.statically.io/gh/maxhaviland/maxhaviland.github.io/gh-pages/
+    - run: npm run build && npm run export
+      env:
+        NEXT_PUBLIC_BASE_PATH: /https://maxhaviland.github.io/
+    # - run: npm run export
+ 
     - run: touch out/.nojekyll 
     - run: touch out/CNAME
     - name: Deploy 🚀
