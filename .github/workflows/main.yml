@@ -28,8 +28,7 @@ jobs:
     - run: npm ci
     - run: npm run build && npm run export
       env:
-        NEXT_PUBLIC_BASE_PATH: cdn.statically.io/gh/maxhaviland/maxhaviland.github.io/gh-pages
-    # - run: npm run export
+        NEXT_PUBLIC_BASE_PATH: "https://maxhaviland.github.io"
  
     - run: touch ./out/.nojekyll 
     - run: touch ./out/CNAME
