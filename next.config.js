@@ -1,7 +1,7 @@
-const basePath = process.env.NODE_ENV === 'production' ? process.env.NEXT_PUBLIC_BASE_PATH : '';
+const basePath = process.env.NODE_ENV === 'production' ? (process.env.NEXT_PUBLIC_BASE_PATH || '') : '';
 
 module.exports = {
-	basePath,
+	basePath: process.env.NEXT_PUBLIC_BASE_PATH,
 	assetPrefix: `${basePath}/`,
 	webpack: (config, { dev }) => {
 		config.module.rules = config.module.rules.map((rule) => {
