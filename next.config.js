@@ -1,6 +1,6 @@
 module.exports = {
-	basePath: process.env.NEXT_PUBLIC_BASE_PATH,
-	assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
+	basePath: 'https://cdn.statically.io/gh/maxhaviland/maxhaviland.github.io/gh-pages/',
+	assetPrefix: 'https://cdn.statically.io/gh/maxhaviland/maxhaviland.github.io/gh-pages/',
 	// webpack: (config, { dev }) => {
 	// 	config.module.rules = config.module.rules.map((rule) => {
 	// 		if (rule.loader === 'babel-loader') {
