@@ -31,8 +31,8 @@ jobs:
         NEXT_PUBLIC_BASE_PATH: /maxhaviland.github.io
     # - run: npm run export
  
-    - run: touch out/.nojekyll 
-    - run: touch out/CNAME
+    - run: touch ./out/.nojekyll 
+    - run: touch ./out/CNAME
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@3.6.2
       with:
