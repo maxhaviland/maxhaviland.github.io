@@ -20,10 +20,12 @@ const ProjectCard: FC<Props> = ({ project }) => {
 				maxH="40"
 				h="400px"
 				w="full"
-				backgroundImage={`url("${project.image}")`}
+				src={project.image}
+				objectFit="scale-down"
 				backgroundSize="contain"
 				backgroundRepeat="no-repeat"
 				backgroundPosition="center"
+				as="img"
 				alt={project.title}
 			/>
 			<Box p="6" bg="white">

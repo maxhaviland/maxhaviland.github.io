@@ -32,7 +32,9 @@ const Menu = () => {
 				zIndex="4">
 				<Box
 					display={['none', 'none', 'block']}
-					backgroundImage="url('/images/profile.svg')"
+					src="/images/profile.svg"
+					as="img"
+					alt="Max Haviland"
 					backgroundSize="100% 100%"
 					width={{
 						lg: 360,
