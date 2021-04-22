@@ -10,7 +10,7 @@ const Content: FC<Props> = ({ title, image, children }) => {
 	return (
 		<>
 			<Container maxW="100vw" w={['sm', '90vw', 'xl', 'lg']} p="0">
-				<Text zIndex="3" position="relative" fontSize={['4xl', '4xl', '5xl', '6xl']} mb="2rem" textAlign="center">
+				<Text as="h1" zIndex="3" position="relative" fontSize={['4xl', '4xl', '5xl', '6xl']} mb="2rem" textAlign="center">
 					{title}
 				</Text>
 				<Container display="flex" justifyContent="center">
