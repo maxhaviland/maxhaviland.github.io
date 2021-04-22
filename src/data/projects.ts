@@ -29,7 +29,7 @@ export const projects: Project[] = [
 		stacks: ['React Native', 'Typescript'],
 		description: 'bla bla bla',
 		image:
-			'https://i.ibb.co/JnvjpQb/c028fc97-deeb-46da-a50d-7d17d114cb58.jpg',
+			'https://i.ibb.co/hgYgGPV/92820a48-9090-45c4-a082-55b8efcb70c1.jpg',
 		link: '',
 		repository: 'https://github.com/maxhaviland/hello-kitty-note-app',
 	},
