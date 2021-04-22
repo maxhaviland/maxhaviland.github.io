@@ -3,7 +3,7 @@ export const projects: Project[] = [
 		title: 'Your Favorite Anime',
 		stacks: ['ReactJS', 'Redux', 'Material UI'],
 		description: 'bla bla bla',
-		image: '/images/projects/your-favorite-animes.png',
+		image: 'https://i.ibb.co/rvzzRTz/your-favorite-animes.png',
 		link: 'https://your-favorite-anime.netlify.app',
 		repository: 'https://github.com/maxhaviland/your-favorite-anime',
 	},
