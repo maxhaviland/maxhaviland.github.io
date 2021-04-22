@@ -1,4 +1,5 @@
 import Content from '../src/components/content';
+import Menu from '../src/components/menu';
 import SocialButton from '../src/components/socialButton';
 import { Text, Stack, Link as ChakraLink } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
@@ -7,6 +8,7 @@ import { RiWhatsappFill } from 'react-icons/ri';
 const Home = () => {
 	return (
 		<>
+			<Menu />
 			<Content title="Max Haviland" image="/images/home.svg">
 				<Text textAlign="justify">
 					Atualmente sou um full stack developer, com mais experiência como front end. Sou um amante da programação, em

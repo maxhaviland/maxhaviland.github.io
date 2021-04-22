@@ -41,13 +41,14 @@ const Menu = () => {
 				position="fixed"
 				top="0"
 				zIndex="4">
-				<Image
+				<Box
 					display={['none', 'none', 'block']}
+					as="img"
 					src="/images/profile.svg"
 					alt="Max Haviland"
 					backgroundSize="100% 100%"
-					width={320}
-					height={280}
+					width={'320px'}
+					height={'280px'}
 					marginTop={{
 						lg: '-7',
 						md: '-14',

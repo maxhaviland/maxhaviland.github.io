@@ -1,11 +1,15 @@
 import Content from '../src/components/content';
 import { Text } from '@chakra-ui/react';
+import Menu from '../src/components/menu';
 
 const Contact = () => {
 	return (
-		<Content title="< />" image="/images/blog.svg">
-			<Text></Text>
-		</Content>
+		<>
+			<Menu />
+			<Content title="< />" image="/images/blog.svg">
+				<Text></Text>
+			</Content>
+		</>
 	);
 };
 

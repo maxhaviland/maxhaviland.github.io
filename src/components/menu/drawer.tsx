@@ -45,6 +45,7 @@ const CustomDrawer: FC<CustomDrawerProps> = ({ display, placement = 'left' }) =>
 				_hover={{
 					opacity: 0.7,
 				}}
+				as="nav"
 				ml="10"
 				mt={[-2, -1]}
 				w={30}
