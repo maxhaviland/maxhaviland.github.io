@@ -65,7 +65,7 @@ const Menu = () => {
 					marginY="0"
 					marginX={[0, 0, -10]}
 					shadow="md">
-					<Box as="nav" className="noscript-menu" display={['none', 'none', 'block']} marginLeft="10">
+					<Box as="nav" display={['none', 'none', 'block']} marginLeft="10">
 						<NavList />
 					</Box>
 					<Drawer display={['block', 'block', 'none']} />
