@@ -8,16 +8,15 @@ class MyDocument extends Document {
 
 	render() {
 		const MEASUREMENT_ID = 'G-L8MXKTZ5CN';
+		const keywords = ['github', 'HTML', 'CSS', 'JavaScript', 'React', 'React Native', 'Flutter', 'Desenvolvimento Web, Web Developer, NodeJS, Dracoliano, Banco de dados, MongoDB, Postgres, Oracle']
+		const author = 'Max Haviland';
 		return (
 			<Html>
 				<Head>
 					<meta charSet="UTF-8" />
-					<meta name="description" content="Max Haviland" />
-					<meta
-						name="keywords"
-						content="HTML, CSS, JavaScript, React, React Native, Flutter, Desenvolvimento web, NodeJS, Dracoliano, Banco de dados, MongoDB, Postgres, Oracle, Kunlatek"
-					/>
-					<meta name="author" content="Max Haviland" />
+					<meta name="description" content={author} />
+					<meta name="keywords" content={keywords.join(', ')}/>
+					<meta name="author" content={author} />
 					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 					<title>Max Haviland</title>
 					<script async src={`https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`}></script>
