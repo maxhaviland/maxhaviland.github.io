@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Flex, Link, Box, SystemProps } from '@chakra-ui/react';
+import { Flex, Link, Box, SystemProps, List, ListItem, Image } from '@chakra-ui/react';
 import Drawer from './drawer';
 import { useRouter } from 'next/router';
 import routes from '../../routes';
@@ -11,11 +11,22 @@ export interface NavListProps {
 const NavList: FC<NavListProps> = ({ direction }) => {
 	const { asPath } = useRouter();
 	const routeList = (route: Route) => (
-		<Link key={route.name} color={asPath === route.path ? 'secondary' : 'white'} px={10} my="0" href={route.path}>
-			{route.name}
-		</Link>
+		<ListItem key={route.name}>
+			<Link
+				_hover={{ color: 'secondary' }}
+				color={asPath === route.path ? 'secondary' : 'white'}
+				px={10}
+				my="0"
+				href={route.path}>
+				{route.name}
+			</Link>
+		</ListItem>
 	);
-	return <Flex direction={direction}>{routes.map(routeList)}</Flex>;
+	return (
+		<List display="flex" direction={direction}>
+			{routes.map(routeList)}
+		</List>
+	);
 };
 
 const Menu = () => {
@@ -30,19 +41,13 @@ const Menu = () => {
 				position="fixed"
 				top="0"
 				zIndex="4">
-				<Box
+				<Image
 					display={['none', 'none', 'block']}
 					src="/images/profile.svg"
-					as="img"
 					alt="Max Haviland"
 					backgroundSize="100% 100%"
-					width={{
-						lg: 360,
-						md: 300,
-					}}
-					height={{
-						base: 280,
-					}}
+					width={320}
+					height={280}
 					marginTop={{
 						lg: '-7',
 						md: '-14',

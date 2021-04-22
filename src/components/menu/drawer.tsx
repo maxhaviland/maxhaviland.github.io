@@ -12,6 +12,8 @@ import {
 	Link,
 	SystemProps,
 	DrawerProps,
+	List,
+	ListItem,
 } from '@chakra-ui/react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { GoEyeClosed } from 'react-icons/go';
@@ -27,14 +29,14 @@ const CustomDrawer: FC<CustomDrawerProps> = ({ display, placement = 'left' }) =>
 	const { isOpen, onOpen, onClose } = useDisclosure();
 
 	const routeList = (route: Route) => (
-		<Box key={route.name} m="0" h="10">
+		<ListItem key={route.name} m="0" h="12">
 			<Link
 				textColor={asPath === route.path ? 'secondary' : 'primary'}
 				_hover={{ textColor: 'secondary' }}
 				href={route.path}>
 				{route.name}
 			</Link>
-		</Box>
+		</ListItem>
 	);
 
 	return (
@@ -66,9 +68,7 @@ const CustomDrawer: FC<CustomDrawerProps> = ({ display, placement = 'left' }) =>
 						/>
 						<DrawerHeader>Menu</DrawerHeader>
 						<DrawerBody>
-							<Stack display="flex" justify="center" m="0 auto">
-								{routes.map(routeList)}
-							</Stack>
+							<List>{routes.map(routeList)}</List>
 						</DrawerBody>
 					</DrawerContent>
 				</DrawerOverlay>
