@@ -24,4 +24,13 @@ export const projects: Project[] = [
 		link: 'https://fybooks.herokuapp.com/?book=disney',
 		repository: 'https://github.com/maxhaviland/fybooks',
 	},
+	{
+		title: 'Hello Kitty Note App',
+		stacks: ['React Native', 'Typescript'],
+		description: 'bla bla bla',
+		image:
+			'https://i.ibb.co/JnvjpQb/c028fc97-deeb-46da-a50d-7d17d114cb58.jpg',
+		link: '',
+		repository: 'https://github.com/maxhaviland/hello-kitty-note-app',
+	},
 ];
