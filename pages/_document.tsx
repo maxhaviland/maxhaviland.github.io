@@ -29,16 +29,6 @@ class MyDocument extends Document {
 							__html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${MEASUREMENT_ID}');`,
 						}}
 					/>
-					<noscript>
-						{null}
-						<style jsx global>{`
-							@media only screen and (min-width: 30em) {
-								.noscript-menu {
-									display: block !important;
-								}
-							}
-					`}</style>
-					</noscript>
 				</Head>
 				<body>
 					<Main />
