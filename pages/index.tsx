@@ -14,7 +14,7 @@ const Home = () => {
 				<Text textAlign="justify">
 					Atualmente sou um full stack developer, com mais experiência como front end. Sou um amante da programação, em
 					especial com a linguagem Javascript. As tecnologias que domino atualmente são:{' '}
-					<b>ReactJS, NodeJS, MongoDB, Postgres e Oracle.</b>
+					<b>ReactJS, React Native, NodeJS, MongoDB, Postgres e Oracle.</b>
 				</Text>
 				<Text mt="4">
 					Como você chegou aqui não me importa, apenas seja bem-vindo. Caso se interesse pelo meu trabalho,{' '}
