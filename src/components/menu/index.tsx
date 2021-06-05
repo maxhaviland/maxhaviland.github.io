@@ -3,6 +3,7 @@ import { Flex, Link, Box, SystemProps, List, ListItem, Image } from '@chakra-ui/
 import Drawer from './drawer';
 import { useRouter } from 'next/router';
 import routes from '../../routes';
+import Picture from '../picture';
 
 export interface NavListProps {
 	direction?: SystemProps['flexDirection'];
@@ -43,19 +44,15 @@ const Menu = () => {
 				zIndex="4">
 				<Box
 					display={['none', 'none', 'block']}
-					as="img"
-					src="/images/profile.svg"
-					alt="Max Haviland"
-					backgroundSize="100% 100%"
-					width={'320px'}
-					height={'280px'}
 					marginTop={{
-						lg: '-7',
-						md: '-14',
+						lg: 0,
+						md: -7
 					}}
 					marginLeft="-4"
 					zIndex="2"
-				/>
+				>
+					<Picture />
+				</Box>
 				<Box
 					bg="primary"
 					color="white"
