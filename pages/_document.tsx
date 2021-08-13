@@ -19,16 +19,6 @@ class MyDocument extends Document {
 					<meta name="author" content={author} />
 					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 					<title>Max Haviland</title>
-					<script async src={`https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`}></script>
-					<script
-						data-ad-client="ca-pub-3193469056099321"
-						async
-						src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<script
-						dangerouslySetInnerHTML={{
-							__html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${MEASUREMENT_ID}');`,
-						}}
-					/>
 				</Head>
 				<body>
 					<Main />
