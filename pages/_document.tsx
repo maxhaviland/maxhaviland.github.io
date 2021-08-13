@@ -7,7 +7,6 @@ class MyDocument extends Document {
 	}
 
 	render() {
-		const MEASUREMENT_ID = 'G-L8MXKTZ5CN';
 		const keywords = ['github', 'HTML', 'CSS', 'JavaScript', 'React', 'React Native', 'Flutter', 'Desenvolvimento Web, Web Developer, NodeJS, Dracoliano, Banco de dados, MongoDB, Postgres, Oracle'];
 		const author = 'Max Haviland';
 		return (
