@@ -6,7 +6,7 @@ import { IconType } from 'react-icons';
 import Menu from '../src/components/menu';
 
 const Contact = () => {
-	const contactList: string[] = ['maxhaviland@gmail.com', '(82) 9 8733-1724', '#Dracoliano'];
+	const contactList: string[] = ['', '', ''];
 	const iconContactList: IconType[] = [IoMdMail, FaPhone, FaDiscord];
 
 	const contactListItem = (listItem: string, index: number) => (
