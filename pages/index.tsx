@@ -24,7 +24,7 @@ const Home = () => {
 					<SocialButton title="Github" href="https://github.com/maxhaviland" leftIcon={<FaGithub size="20" />} />
 					<SocialButton
 						title="Linkedin"
-						href="https://www.linkedin.com/in/max-haviland-a54574187/"
+						href="https://www.linkedin.com/in/"
 						leftIcon={<FaLinkedin size="20" />}
 					/>
 					<SocialButton
@@ -32,8 +32,8 @@ const Home = () => {
 						href={{
 							pathname: 'https://api.whatsapp.com/send',
 							query: {
-								phone: '+5582987331724',
-								text: 'Olá, Max! Encontrei o seu site e gostaria de saber mais sobre o seu trabalho.',
+								phone: '',
+								text: '',
 							},
 						}}
 						leftIcon={<RiWhatsappFill size="20" />}
