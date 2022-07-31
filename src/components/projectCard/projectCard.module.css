@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+.container {
+  font-family: 'Rajdhani', sans-serif;
+}
+.container p {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 22px;
+  margin: 6px 0;
+  text-align: center;
+}
+.card {
+  background-color: #ffffff;
+  height: 20rem;
+  box-shadow: 12px 9px 23px -9px rgba(0,0,0,0.1);
+  border-radius: 1rem;
+  display: flex;
+  opacity: 1;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+.cardImage {
+  object-fit: cover;
+  height: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  height: 20rem;
+}
+
+.stackList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 0;
+}
+
+.actionList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.actionList > li {
+  cursor: pointer;
+}
+
+.actionList > li:hover {
+  color: #382eff;
+  margin: 0;
+  padding: 0;
+}
