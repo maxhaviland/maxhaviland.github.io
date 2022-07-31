@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500&display=swap');
+
+.container {
+    line-height: 1.5;
+    text-size-adjust: 100%;
+}
+
+.container ul p {
+  margin: 0;
+  padding: 0;
+}
+
+.projects > ul {
+  display: grid;
+  list-style: none;
+  gap: 2rem;
+  margin-top: 2.2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .projects > ul {
+    grid-template-columns: repeat(2, 248px);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .projects > ul {
+    grid-template-columns: repeat(3, 248px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .projects > ul {
+    grid-template-columns: repeat(5, 248px);
+  }
+}
