@@ -24,7 +24,7 @@ export const projects: Project[] = [
 		description: '',
 		image: 'https://i.ibb.co/9ZNQRM7/cats.gif',
 		link: '',
-		repository: 'https://github.com/maxhaviland/your-favorite-anime',
+		repository: 'https://github.com/maxhaviland/giphy-app',
 	},
 	{
 		title: 'FyBooks',
